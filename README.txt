@@ -1,56 +1,56 @@
-BASIC GEOMETRY LEARNING HUB
-============================
+📁 **Project Structure**
 
-A fully responsive educational website about basic geometry for kids and beginners.
+├── index.html      # Homepage with introduction & shape grid  
+├── shapes.html     # Detailed information about 2D and 3D shapes  
+├── basics.html     # Geometry basics: points, lines, rays, angles  
+├── quiz.html       # Interactive quiz with MCQs  
+├── style.css       # Website styling  
+├── script.js       # JavaScript for interactions  
 
-PROJECT STRUCTURE
------------------
-- index.html      : Homepage with introduction and shape grid
-- shapes.html     : Detailed information about 2D and 3D shapes
-- basics.html     : Geometry basics (points, lines, rays, angles)
-- quiz.html       : Interactive quiz with multiple-choice questions
-- style.css       : All styling for the website
-- script.js       : JavaScript for interactivity
+ ✨ **Features**
 
-FEATURES
---------
-1. Responsive design that works on mobile, tablet, and desktop
-2. Interactive shape cards with popup details
-3. Expandable "Learn More" sections
-4. Interactive drawing canvas
-5. Angle explorer with draggable angles
-6. Quiz with 10 multiple-choice questions
-7. Colorful, kid-friendly design with smooth animations
-8. Real-life examples for each geometric concept
+1. 📱 Fully responsive design (mobile, tablet, desktop)
+2. 🔵 Interactive shape cards with pop-up details
+3. 📘 Expandable “Learn More” sections
+4. ✏️ Built-in drawing canvas for practicing shapes
+5. 📐 Angle explorer with draggable angles
+6. 📝 Quiz page with 10 multiple-choice questions
+7. 🎨 Colorful, kid-friendly UI with smooth animations
+8. 🌍 Real-life examples for every geometric concept
 
-HOW TO USE
-----------
-1. Open index.html in any modern web browser
-2. Navigate between pages using the top navigation menu
-3. Click on shape cards to see detailed information
-4. Use the drawing canvas to practice drawing shapes
-5. Take the quiz to test your geometry knowledge
+🚀 **How to Use**
 
-TECHNOLOGIES USED
------------------
-- HTML5
-- CSS3 (with Flexbox and Grid)
-- Vanilla JavaScript
-- Font Awesome icons
-- Google Fonts (Nunito and Comic Neue)
+1. Open **index.html** in any modern web browser.
+2. Navigate using the **top navigation menu**.
+3. Click shape cards to learn more about each shape.
+4. Practice drawing on the **drawing canvas**.
+5. Take the **quiz** to test your geometry understanding.
 
-COLOR SCHEME
-------------
-- Primary: #4a6fa5 (blue)
-- Secondary: #6b8cbc (light blue)
-- Accent: #ff9a8b (coral)
-- Background: #f9f9f9 (light gray)
-- Text: #444 (dark gray)
+🛠️ **Technologies Used**
 
-AUTHOR
-------
-Created as an educational project for learning geometry.
+* **HTML5**
+* **CSS3** (Flexbox + Grid)
+* **Vanilla JavaScript**
+* **Font Awesome Icons**
+* **Google Fonts** (Nunito, Comic Neue)
 
-LICENSE
--------
-Free to use for educational purposes.
+🎨 **Color Scheme**
+
+| Purpose    | Color                  |
+| ---------- | ---------------------- |
+| Primary    | `#4a6fa5` (Blue)       |
+| Secondary  | `#6b8cbc` (Light Blue) |
+| Accent     | `#ff9a8b` (Coral)      |
+| Background | `#f9f9f9` (Light Gray) |
+| Text       | `#444444` (Dark Gray)  |
+
+👨‍🏫 **Author**
+
+Created as an educational project to help learners understand basic geometry visually and interactively.
+
+
+📄 **License**
+
+Free to use **for educational purposes**.
+
+
