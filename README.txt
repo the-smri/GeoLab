@@ -1,4 +1,4 @@
-📁 **Project Structure**
+📁 *Project Structure*
 
 ├── index.html      # Homepage with introduction & shape grid  
 ├── shapes.html     # Detailed information about 2D and 3D shapes  
@@ -7,7 +7,7 @@
 ├── style.css       # Website styling  
 ├── script.js       # JavaScript for interactions  
 
- ✨ **Features**
+ ✨ *Features*
 
 1. 📱 Fully responsive design (mobile, tablet, desktop)
 2. 🔵 Interactive shape cards with pop-up details
@@ -18,7 +18,7 @@
 7. 🎨 Colorful, kid-friendly UI with smooth animations
 8. 🌍 Real-life examples for every geometric concept
 
-🚀 **How to Use**
+🚀 *How to Use*
 
 1. Open **index.html** in any modern web browser.
 2. Navigate using the **top navigation menu**.
@@ -26,7 +26,7 @@
 4. Practice drawing on the **drawing canvas**.
 5. Take the **quiz** to test your geometry understanding.
 
-🛠️ **Technologies Used**
+🛠️ *Technologies Used*
 
 * **HTML5**
 * **CSS3** (Flexbox + Grid)
@@ -34,7 +34,7 @@
 * **Font Awesome Icons**
 * **Google Fonts** (Nunito, Comic Neue)
 
-🎨 **Color Scheme**
+🎨 *Color Scheme*
 
 | Purpose    | Color                  |
 | ---------- | ---------------------- |
@@ -44,12 +44,12 @@
 | Background | `#f9f9f9` (Light Gray) |
 | Text       | `#444444` (Dark Gray)  |
 
-👨‍🏫 **Author**
+👨‍🏫 *Author*
 
 Created as an educational project to help learners understand basic geometry visually and interactively.
 
 
-📄 **License**
+📄 *License*
 
 Free to use **for educational purposes**.
 
