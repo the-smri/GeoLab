@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics - Geometry Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-shapes"></i>
+                <h1>Basic Geometry Learning Hub</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shapes.html">Shapes</a></li>
+                    <li><a href="basics.html" class="active">Basics</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2>Geometry Basics</h2>
+            <p>Learn about points, lines, rays, angles, and more!</p>
+        </div>
+    </section>
+
+    <!-- Basics Content -->
+    <section class="basics-content">
+        <div class="container">
+            <!-- Points -->
+            <div class="basic-concept">
+                <div class="concept-header">
+                    <div class="concept-icon">
+                        <i class="fas fa-dot-circle"></i>
+                    </div>
+                    <h3>Point</h3>
+                </div>
+                <div class="concept-body">
+                    <div class="concept-visual">
+                        <div class="point-visual"></div>
+                        <p class="visual-label">A point</p>
+                    </div>
+                    <div class="concept-description">
+                        <p>A <strong>point</strong> is an exact location in space. It has no size, no length, no width, and no depth. We usually represent a point with a dot and name it with a capital letter.</p>
+                        <div class="expandable-text" id="pointExpand">
+                            <p class="hidden-text">In geometry, a point is considered a fundamental building block. All other geometric shapes are made up of points. For example, a line is made up of an infinite number of points.</p>
+                            <button class="btn-expand" onclick="toggleExpand('pointExpand')">Learn More <i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div class="concept-examples">
+                            <h4>Examples:</h4>
+                            <ul>
+                                <li>The tip of a pencil</li>
+                                <li>A location on a map</li>
+                                <li>The center of a circle</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lines -->
+            <div class="basic-concept">
+                <div class="concept-header">
+                    <div class="concept-icon">
+                        <i class="fas fa-minus"></i>
+                    </div>
+                    <h3>Line</h3>
+                </div>
+                <div class="concept-body">
+                    <div class="concept-visual">
+                        <div class="line-visual"></div>
+                        <p class="visual-label">A line extending infinitely in both directions</p>
+                    </div>
+                    <div class="concept-description">
+                        <p>A <strong>line</strong> is a straight path that extends infinitely in both directions. It has no thickness and is made up of an infinite number of points. A line is named by any two points on it.</p>
+                        <div class="expandable-text" id="lineExpand">
+                            <p class="hidden-text">Lines can be classified in different ways: horizontal (left-right), vertical (up-down), or diagonal. Parallel lines never meet, while intersecting lines cross at a point.</p>
+                            <button class="btn-expand" onclick="toggleExpand('lineExpand')">Learn More <i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div class="concept-examples">
+                            <h4>Examples:</h4>
+                            <ul>
+                                <li>The edge of a ruler</li>
+                                <li>A straight road</li>
+                                <li>A tight string</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Line Segment -->
+            <div class="basic-concept">
+                <div class="concept-header">
+                    <div class="concept-icon">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <h3>Line Segment</h3>
+                </div>
+                <div class="concept-body">
+                    <div class="concept-visual">
+                        <div class="line-segment-visual"></div>
+                        <p class="visual-label">A line segment with two endpoints</p>
+                    </div>
+                    <div class="concept-description">
+                        <p>A <strong>line segment</strong> is part of a line with two endpoints. Unlike a line, it has a definite length. It is named by its two endpoints.</p>
+                        <div class="expandable-text" id="segmentExpand">
+                            <p class="hidden-text">Line segments are the sides of polygons. For example, a triangle has three line segments, a square has four, and so on. The length of a line segment can be measured with a ruler.</p>
+                            <button class="btn-expand" onclick="toggleExpand('segmentExpand')">Learn More <i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div class="concept-examples">
+                            <h4>Examples:</h4>
+                            <ul>
+                                <li>A piece of straight wire</li>
+                                <li>The edge of a book</li>
+                                <li>A straw</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ray -->
+            <div class="basic-concept">
+                <div class="concept-header">
+                    <div class="concept-icon">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <h3>Ray</h3>
+                </div>
+                <div class="concept-body">
+                    <div class="concept-visual">
+                        <div class="ray-visual"></div>
+                        <p class="visual-label">A ray with one endpoint extending infinitely</p>
+                    </div>
+                    <div class="concept-description">
+                        <p>A <strong>ray</strong> is part of a line that has one endpoint and extends infinitely in one direction. It is named by its endpoint and any other point on the ray.</p>
+                        <div class="expandable-text" id="rayExpand">
+                            <p class="hidden-text">Rays are important in understanding angles. An angle is formed by two rays that share a common endpoint (called the vertex). Think of a ray as a beam of light coming from a flashlight.</p>
+                            <button class="btn-expand" onclick="toggleExpand('rayExpand')">Learn More <i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div class="concept-examples">
+                            <h4>Examples:</h4>
+                            <ul>
+                                <li>Sunlight</li>
+                                <li>A laser pointer beam</li>
+                                <li>The path of an arrow shot from a bow</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Angles -->
+            <div class="basic-concept">
+                <div class="concept-header">
+                    <div class="concept-icon">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                    <h3>Angle</h3>
+                </div>
+                <div class="concept-body">
+                    <div class="concept-visual">
+                        <div class="angle-visual">
+                            <div class="angle-line-1"></div>
+                            <div class="angle-line-2"></div>
+                            <div class="angle-vertex"></div>
+                        </div>
+                        <p class="visual-label">An angle formed by two rays</p>
+                    </div>
+                    <div class="concept-description">
+                        <p>An <strong>angle</strong> is formed by two rays that share a common endpoint (called the vertex). Angles are measured in degrees (°).</p>
+                        <div class="expandable-text" id="angleExpand">
+                            <p class="hidden-text">Angles are classified by their measures: acute (less than 90°), right (exactly 90°), obtuse (between 90° and 180°), straight (exactly 180°), and reflex (between 180° and 360°).</p>
+                            <button class="btn-expand" onclick="toggleExpand('angleExpand')">Learn More <i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div class="concept-examples">
+                            <h4>Examples:</h4>
+                            <ul>
+                                <li>Clock hands at different times</li>
+                                <li>Corners of a book (right angles)</li>
+                                <li>Open scissors</li>
+                                <li>A partially open door</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Interactive Angle Demo -->
+            <div class="interactive-demo">
+                <h3>Interactive Angle Explorer</h3>
+                <p>Drag the points to create different types of angles:</p>
+                
+                <div class="angle-demo-container">
+                    <div class="angle-controls">
+                        <div class="angle-type-selector">
+                            <button class="angle-type-btn active" data-angle="acute">Acute (&lt;90°)</button>
+                            <button class="angle-type-btn" data-angle="right">Right (90°)</button>
+                            <button class="angle-type-btn" data-angle="obtuse">Obtuse (&gt;90°)</button>
+                            <button class="angle-type-btn" data-angle="straight">Straight (180°)</button>
+                        </div>
+                        <div class="angle-display">
+                            <span id="angleValue">45°</span>
+                            <p id="angleType">Acute Angle</p>
+                        </div>
+                    </div>
+                    
+                    <div class="angle-canvas-container">
+                        <canvas id="angleCanvas" width="600" height="300">
+                            Your browser does not support the canvas element.
+                        </canvas>
+                        <div class="angle-instructions">
+                            <p>Drag the red dot to change the angle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-shapes"></i>
+                    <h3>Geometry Learning Hub</h3>
+                    <p>Making geometry fun for everyone!</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shapes.html">Shapes</a></li>
+                        <li><a href="basics.html">Basics</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Learning Tips</h4>
+                    <p>Look for shapes in everyday objects!</p>
+                    <p>Practice drawing shapes freehand.</p>
+                    <p>Try our quiz to test your knowledge.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Basic Geometry Learning Hub. Made with <i class="fas fa-heart"></i> for geometry learners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

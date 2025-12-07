@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes - Geometry Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-shapes"></i>
+                <h1>Basic Geometry Learning Hub</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shapes.html" class="active">Shapes</a></li>
+                    <li><a href="basics.html">Basics</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2>All About Shapes</h2>
+            <p>Explore 2D and 3D shapes with detailed information</p>
+        </div>
+    </section>
+
+    <!-- Shapes Detail Section -->
+    <section class="shapes-detail">
+        <div class="container">
+            <div class="shapes-category">
+                <h3><i class="fas fa-square"></i> 2D Shapes (Flat Shapes)</h3>
+                <p>2D shapes are flat and have only two dimensions: length and width.</p>
+            </div>
+            
+            <div class="shapes-list">
+                <!-- Circle -->
+                <div class="shape-detail-card">
+                    <div class="shape-detail-header">
+                        <div class="shape-detail-visual circle-shape-large"></div>
+                        <h4>Circle</h4>
+                    </div>
+                    <div class="shape-detail-body">
+                        <div class="shape-properties">
+                            <h5>Properties:</h5>
+                            <ul>
+                                <li><strong>Sides:</strong> 0 (curved line)</li>
+                                <li><strong>Angles:</strong> 0</li>
+                                <li><strong>Symmetry:</strong> Infinite lines of symmetry</li>
+                                <li><strong>Perimeter:</strong> Circumference = 2πr</li>
+                                <li><strong>Area:</strong> πr²</li>
+                            </ul>
+                        </div>
+                        <div class="shape-examples">
+                            <h5>Real-Life Examples:</h5>
+                            <ul>
+                                <li>Coins</li>
+                                <li>Wheels</li>
+                                <li>Plates</li>
+                                <li>Clock faces</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shape-fun-fact">
+                        <p><strong>Fun Fact:</strong> The circle is the shape with the largest area for a given perimeter.</p>
+                    </div>
+                </div>
+                
+                <!-- Square -->
+                <div class="shape-detail-card">
+                    <div class="shape-detail-header">
+                        <div class="shape-detail-visual square-shape-large"></div>
+                        <h4>Square</h4>
+                    </div>
+                    <div class="shape-detail-body">
+                        <div class="shape-properties">
+                            <h5>Properties:</h5>
+                            <ul>
+                                <li><strong>Sides:</strong> 4 (all equal)</li>
+                                <li><strong>Angles:</strong> 4 right angles (90° each)</li>
+                                <li><strong>Symmetry:</strong> 4 lines of symmetry</li>
+                                <li><strong>Perimeter:</strong> 4 × side length</li>
+                                <li><strong>Area:</strong> side length × side length</li>
+                            </ul>
+                        </div>
+                        <div class="shape-examples">
+                            <h5>Real-Life Examples:</h5>
+                            <ul>
+                                <li>Chessboard squares</li>
+                                <li>Post-it notes</li>
+                                <li>Window panes</li>
+                                <li>Tile floors</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shape-fun-fact">
+                        <p><strong>Fun Fact:</strong> A square is a special type of rectangle where all sides are equal.</p>
+                    </div>
+                </div>
+                
+                <!-- Rectangle -->
+                <div class="shape-detail-card">
+                    <div class="shape-detail-header">
+                        <div class="shape-detail-visual rectangle-shape-large"></div>
+                        <h4>Rectangle</h4>
+                    </div>
+                    <div class="shape-detail-body">
+                        <div class="shape-properties">
+                            <h5>Properties:</h5>
+                            <ul>
+                                <li><strong>Sides:</strong> 4 (opposite sides equal)</li>
+                                <li><strong>Angles:</strong> 4 right angles (90° each)</li>
+                                <li><strong>Symmetry:</strong> 2 lines of symmetry</li>
+                                <li><strong>Perimeter:</strong> 2 × (length + width)</li>
+                                <li><strong>Area:</strong> length × width</li>
+                            </ul>
+                        </div>
+                        <div class="shape-examples">
+                            <h5>Real-Life Examples:</h5>
+                            <ul>
+                                <li>Doors</li>
+                                <li>Books</li>
+                                <li>Smartphones</li>
+                                <li>Tables</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shape-fun-fact">
+                        <p><strong>Fun Fact:</strong> All squares are rectangles, but not all rectangles are squares.</p>
+                    </div>
+                </div>
+                
+                <!-- Triangle -->
+                <div class="shape-detail-card">
+                    <div class="shape-detail-header">
+                        <div class="shape-detail-visual triangle-shape-large"></div>
+                        <h4>Triangle</h4>
+                    </div>
+                    <div class="shape-detail-body">
+                        <div class="shape-properties">
+                            <h5>Properties:</h5>
+                            <ul>
+                                <li><strong>Sides:</strong> 3</li>
+                                <li><strong>Angles:</strong> 3 (sum always 180°)</li>
+                                <li><strong>Types:</strong> Equilateral, Isosceles, Scalene</li>
+                                <li><strong>Perimeter:</strong> sum of all sides</li>
+                                <li><strong>Area:</strong> ½ × base × height</li>
+                            </ul>
+                        </div>
+                        <div class="shape-examples">
+                            <h5>Real-Life Examples:</h5>
+                            <ul>
+                                <li>Pyramid sides</li>
+                                <li>Sandwich halves</li>
+                                <li>Roof structures</li>
+                                <li>Tortilla chips</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shape-fun-fact">
+                        <p><strong>Fun Fact:</strong> Triangles are the strongest shape, which is why they're used in bridges and roofs.</p>
+                    </div>
+                </div>
+                
+                <!-- Pentagon -->
+                <div class="shape-detail-card">
+                    <div class="shape-detail-header">
+                        <div class="shape-detail-visual pentagon-shape-large"></div>
+                        <h4>Pentagon</h4>
+                    </div>
+                    <div class="shape-detail-body">
+                        <div class="shape-properties">
+                            <h5>Properties:</h5>
+                            <ul>
+                                <li><strong>Sides:</strong> 5</li>
+                                <li><strong>Angles:</strong> 5 (sum is 540°)</li>
+                                <li><strong>Interior Angle:</strong> 108° (regular pentagon)</li>
+                                <li><strong>Symmetry:</strong> 5 lines of symmetry</li>
+                            </ul>
+                        </div>
+                        <div class="shape-examples">
+                            <h5>Real-Life Examples:</h5>
+                            <ul>
+                                <li>Home plate in baseball</li>
+                                <li>Some traffic signs</li>
+                                <li>The Pentagon building</li>
+                                <li>Flowers like morning glories</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shape-fun-fact">
+                        <p><strong>Fun Fact:</strong> "Penta" means five in Greek, so pentagon means "five angles".</p>
+                    </div>
+                </div>
+                
+                <!-- Hexagon -->
+                <div class="shape-detail-card">
+                    <div class="shape-detail-header">
+                        <div class="shape-detail-visual hexagon-shape-large"></div>
+                        <h4>Hexagon</h4>
+                    </div>
+                    <div class="shape-detail-body">
+                        <div class="shape-properties">
+                            <h5>Properties:</h5>
+                            <ul>
+                                <li><strong>Sides:</strong> 6</li>
+                                <li><strong>Angles:</strong> 6 (sum is 720°)</li>
+                                <li><strong>Interior Angle:</strong> 120° (regular hexagon)</li>
+                                <li><strong>Symmetry:</strong> 6 lines of symmetry</li>
+                            </ul>
+                        </div>
+                        <div class="shape-examples">
+                            <h5>Real-Life Examples:</h5>
+                            <ul>
+                                <li>Honeycomb cells</li>
+                                <li>Snowflakes</li>
+                                <li>Nut bolts</li>
+                                <li>Some soccer ball patterns</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shape-fun-fact">
+                        <p><strong>Fun Fact:</strong> Hexagons tessellate perfectly (fit together without gaps), which is why bees use them in honeycombs.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="shapes-category">
+                <h3><i class="fas fa-cube"></i> 3D Shapes (Solid Shapes)</h3>
+                <p>3D shapes have three dimensions: length, width, and height.</p>
+            </div>
+            
+            <div class="shapes-list">
+                <!-- Cube -->
+                <div class="shape-detail-card">
+                    <div class="shape-detail-header">
+                        <div class="shape-detail-visual cube-shape-large"></div>
+                        <h4>Cube</h4>
+                    </div>
+                    <div class="shape-detail-body">
+                        <div class="shape-properties">
+                            <h5>Properties:</h5>
+                            <ul>
+                                <li><strong>Faces:</strong> 6 (all squares)</li>
+                                <li><strong>Edges:</strong> 12</li>
+                                <li><strong>Vertices:</strong> 8 (corners)</li>
+                                <li><strong>Volume:</strong> side × side × side</li>
+                                <li><strong>Surface Area:</strong> 6 × side²</li>
+                            </ul>
+                        </div>
+                        <div class="shape-examples">
+                            <h5>Real-Life Examples:</h5>
+                            <ul>
+                                <li>Dice</li>
+                                <li>Ice cubes</li>
+                                <li>Rubik's cube</li>
+                                <li>Sugar cubes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shape-fun-fact">
+                        <p><strong>Fun Fact:</strong> A cube is also called a "regular hexahedron" because it has six faces.</p>
+                    </div>
+                </div>
+                
+                <!-- Sphere -->
+                <div class="shape-detail-card">
+                    <div class="shape-detail-header">
+                        <div class="shape-detail-visual sphere-shape-large"></div>
+                        <h4>Sphere</h4>
+                    </div>
+                    <div class="shape-detail-body">
+                        <div class="shape-properties">
+                            <h5>Properties:</h5>
+                            <ul>
+                                <li><strong>Faces:</strong> 1 curved surface</li>
+                                <li><strong>Edges:</strong> 0</li>
+                                <li><strong>Vertices:</strong> 0</li>
+                                <li><strong>Volume:</strong> (4/3)πr³</li>
+                                <li><strong>Surface Area:</strong> 4πr²</li>
+                            </ul>
+                        </div>
+                        <div class="shape-examples">
+                            <h5>Real-Life Examples:</h5>
+                            <ul>
+                                <li>Balls (basketball, soccer ball)</li>
+                                <li>Planets</li>
+                                <li>Marbles</li>
+                                <li>Oranges</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shape-fun-fact">
+                        <p><strong>Fun Fact:</strong> Of all shapes with the same volume, a sphere has the smallest surface area.</p>
+                    </div>
+                </div>
+                
+                <!-- Cone -->
+                <div class="shape-detail-card">
+                    <div class="shape-detail-header">
+                        <div class="shape-detail-visual cone-shape-large"></div>
+                        <h4>Cone</h4>
+                    </div>
+                    <div class="shape-detail-body">
+                        <div class="shape-properties">
+                            <h5>Properties:</h5>
+                            <ul>
+                                <li><strong>Faces:</strong> 2 (1 flat circle, 1 curved surface)</li>
+                                <li><strong>Edges:</strong> 1 circular edge</li>
+                                <li><strong>Vertices:</strong> 1 (apex)</li>
+                                <li><strong>Volume:</strong> (1/3)πr²h</li>
+                            </ul>
+                        </div>
+                        <div class="shape-examples">
+                            <h5>Real-Life Examples:</h5>
+                            <ul>
+                                <li>Ice cream cones</li>
+                                <li>Traffic cones</li>
+                                <li>Party hats</li>
+                                <li>Volcanoes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shape-fun-fact">
+                        <p><strong>Fun Fact:</strong> The cone shape helps things roll in a circle instead of a straight line.</p>
+                    </div>
+                </div>
+                
+                <!-- Cylinder -->
+                <div class="shape-detail-card">
+                    <div class="shape-detail-header">
+                        <div class="shape-detail-visual cylinder-shape-large"></div>
+                        <h4>Cylinder</h4>
+                    </div>
+                    <div class="shape-detail-body">
+                        <div class="shape-properties">
+                            <h5>Properties:</h5>
+                            <ul>
+                                <li><strong>Faces:</strong> 3 (2 circles, 1 curved surface)</li>
+                                <li><strong>Edges:</strong> 2 circular edges</li>
+                                <li><strong>Vertices:</strong> 0</li>
+                                <li><strong>Volume:</strong> πr²h</li>
+                            </ul>
+                        </div>
+                        <div class="shape-examples">
+                            <h5>Real-Life Examples:</h5>
+                            <ul>
+                                <li>Cans (soda cans, soup cans)</li>
+                                <li>Pipes</li>
+                                <li>Pillars</li>
+                                <li>Batteries</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shape-fun-fact">
+                        <p><strong>Fun Fact:</strong> A cylinder can roll like a circle, but it only rolls in one direction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-shapes"></i>
+                    <h3>Geometry Learning Hub</h3>
+                    <p>Making geometry fun for everyone!</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shapes.html">Shapes</a></li>
+                        <li><a href="basics.html">Basics</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Learning Tips</h4>
+                    <p>Look for shapes in everyday objects!</p>
+                    <p>Practice drawing shapes freehand.</p>
+                    <p>Try our quiz to test your knowledge.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Basic Geometry Learning Hub. Made with <i class="fas fa-heart"></i> for geometry learners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

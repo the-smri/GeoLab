@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Geometry Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-shapes"></i>
+                <h1>Basic Geometry Learning Hub</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shapes.html">Shapes</a></li>
+                    <li><a href="basics.html">Basics</a></li>
+                    <li><a href="quiz.html" class="active">Quiz</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2>Geometry Quiz</h2>
+            <p>Test your knowledge of basic geometry!</p>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section">
+        <div class="container">
+            <div class="quiz-intro">
+                <div class="quiz-info">
+                    <h3>Ready to test your geometry skills?</h3>
+                    <p>This quiz has 10 multiple-choice questions about basic geometry concepts. Try to answer all questions correctly!</p>
+                    <div class="quiz-stats">
+                        <div class="stat">
+                            <i class="fas fa-question-circle"></i>
+                            <span>10 Questions</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-award"></i>
+                            <span>Earn a certificate!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz-start-card">
+                    <div class="start-card-content">
+                        <i class="fas fa-pencil-alt"></i>
+                        <h4>Start the Quiz</h4>
+                        <p>Click the button below to begin the geometry quiz.</p>
+                        <button class="btn-primary" id="startQuiz">Start Quiz</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quiz Container (Hidden by default) -->
+            <div class="quiz-container" id="quizContainer">
+                <div class="quiz-header">
+                    <div class="quiz-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <p>Question <span id="currentQuestion">1</span> of 10</p>
+                    </div>
+                    <div class="quiz-score">
+                        <p>Score: <span id="scoreValue">0</span>/10</p>
+                    </div>
+                </div>
+                
+                <div class="quiz-question" id="questionContainer">
+                    <!-- Question will be loaded by JavaScript -->
+                </div>
+                
+                <div class="quiz-actions">
+                    <button class="btn-secondary" id="prevQuestion" disabled>Previous</button>
+                    <button class="btn-primary" id="nextQuestion">Next Question</button>
+                    <button class="btn-submit" id="submitQuiz" style="display: none;">Submit Quiz</button>
+                </div>
+            </div>
+            
+            <!-- Results Container (Hidden by default) -->
+            <div class="results-container" id="resultsContainer">
+                <div class="results-card">
+                    <div class="results-header">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Quiz Complete!</h3>
+                    </div>
+                    <div class="results-body">
+                        <div class="score-circle">
+                            <svg width="120" height="120">
+                                <circle cx="60" cy="60" r="54" stroke="#f0f0f0" stroke-width="12" fill="none"></circle>
+                                <circle id="scoreCircle" cx="60" cy="60" r="54" stroke="#4a6fa5" stroke-width="12" 
+                                        stroke-dasharray="339.292" stroke-dashoffset="339.292" fill="none" 
+                                        transform="rotate(-90 60 60)"></circle>
+                                <text x="60" y="65" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">
+                                    <tspan id="finalScore">0</tspan>/10
+                                </text>
+                            </svg>
+                        </div>
+                        <div class="score-message">
+                            <h4 id="scoreMessage">Keep practicing!</h4>
+                            <p id="scoreDescription">You answered <span id="correctAnswers">0</span> out of 10 questions correctly.</p>
+                        </div>
+                        <div class="results-actions">
+                            <button class="btn-secondary" id="reviewAnswers">Review Answers</button>
+                            <button class="btn-primary" id="retakeQuiz">Retake Quiz</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review Answers Section -->
+                <div class="review-container" id="reviewContainer">
+                    <h3>Review Your Answers</h3>
+                    <div class="review-questions">
+                        <!-- Questions and answers will be loaded by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quiz Tips -->
+            <div class="quiz-tips">
+                <h3>Tips for Learning Geometry</h3>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <i class="fas fa-eye"></i>
+                        <h4>Look Around</h4>
+                        <p>Notice geometric shapes in everyday objects around you.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-draw-polygon"></i>
+                        <h4>Draw Shapes</h4>
+                        <p>Practice drawing shapes freehand to understand their properties.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <h4>Use Manipulatives</h4>
+                        <p>Use physical objects like blocks to understand 3D shapes.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-redo"></i>
+                        <h4>Practice Regularly</h4>
+                        <p>Regular practice helps reinforce geometric concepts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-shapes"></i>
+                    <h3>Geometry Learning Hub</h3>
+                    <p>Making geometry fun for everyone!</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shapes.html">Shapes</a></li>
+                        <li><a href="basics.html">Basics</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Learning Tips</h4>
+                    <p>Look for shapes in everyday objects!</p>
+                    <p>Practice drawing shapes freehand.</p>
+                    <p>Try our quiz to test your knowledge.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Basic Geometry Learning Hub. Made with <i class="fas fa-heart"></i> for geometry learners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

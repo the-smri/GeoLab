@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Geometry Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Comic+Neue:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-shapes"></i>
+                <h1>Basic Geometry Learning Hub</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="shapes.html">Shapes</a></li>
+                    <li><a href="basics.html">Basics</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Discover the World of Shapes!</h2>
+                <p>Geometry is all around us! From the circles in your bicycle wheels to the triangles in your
+                    sandwiches, shapes make up our world. Let's explore together!</p>
+                <a href="#shapes" class="btn-primary">Explore Shapes</a>
+            </div>
+            <div class="hero-image">
+                <div class="shape-animation">
+                    <div class="circle"></div>
+                    <div class="square"></div>
+                    <div class="triangle"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="introduction">
+        <div class="container">
+            <h2>What is Geometry?</h2>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p>Geometry is a branch of mathematics that studies the sizes, shapes, positions, angles, and
+                        dimensions of things. The word "geometry" comes from the Greek words "geo" meaning "earth" and
+                        "metron" meaning "measure".</p>
+                    <p>In basic geometry, we learn about points, lines, shapes, and space. Understanding geometry helps
+                        us in many real-life situations like building things, playing sports, and even creating art!</p>
+                    <div class="expandable-text" id="introExpand">
+                        <p class="hidden-text">Geometry has been studied for thousands of years. Ancient Egyptians used
+                            geometry to measure land after the Nile River flooded. Ancient Greeks like Euclid organized
+                            geometry into a logical system that we still learn from today!</p>
+                        <button class="btn-expand" onclick="toggleExpand('introExpand')">Learn More <i
+                                class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+                <div class="intro-image">
+                    <div class="geometric-pattern">
+                        <div class="pattern-circle"></div>
+                        <div class="pattern-triangle"></div>
+                        <div class="pattern-square"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shapes Grid Section -->
+    <section class="shapes-grid" id="shapes">
+        <div class="container">
+            <h2>Basic Shapes</h2>
+            <p class="section-subtitle">Click on any shape to learn more about it!</p>
+
+            <div class="grid-container">
+                <!-- Circle -->
+                <div class="shape-card" data-shape="circle">
+                    <div class="shape-icon">
+                        <div class="shape-visual circle-shape"></div>
+                    </div>
+                    <h3>Circle</h3>
+                    <p>A round shape with no corners</p>
+                    <button class="btn-details">Learn More</button>
+                </div>
+
+                <!-- Square -->
+                <div class="shape-card" data-shape="square">
+                    <div class="shape-icon">
+                        <div class="shape-visual square-shape"></div>
+                    </div>
+                    <h3>Square</h3>
+                    <p>Four equal sides, four right angles</p>
+                    <button class="btn-details">Learn More</button>
+                </div>
+
+                <!-- Rectangle -->
+                <div class="shape-card" data-shape="rectangle">
+                    <div class="shape-icon">
+                        <div class="shape-visual rectangle-shape"></div>
+                    </div>
+                    <h3>Rectangle</h3>
+                    <p>Four sides, opposite sides equal</p>
+                    <button class="btn-details">Learn More</button>
+                </div>
+
+                <!-- Triangle -->
+                <div class="shape-card" data-shape="triangle">
+                    <div class="shape-icon">
+                        <div class="shape-visual triangle-shape"></div>
+                    </div>
+                    <h3>Triangle</h3>
+                    <p>Three sides, three angles</p>
+                    <button class="btn-details">Learn More</button>
+                </div>
+
+                <!-- Pentagon -->
+                <div class="shape-card" data-shape="pentagon">
+                    <div class="shape-icon">
+                        <div class="shape-visual pentagon-shape"></div>
+                    </div>
+                    <h3>Pentagon</h3>
+                    <p>Five sides, five angles</p>
+                    <button class="btn-details">Learn More</button>
+                </div>
+
+                <!-- Hexagon -->
+                <div class="shape-card" data-shape="hexagon">
+                    <div class="shape-icon">
+                        <div class="shape-visual hexagon-shape"></div>
+                    </div>
+                    <h3>Hexagon</h3>
+                    <p>Six sides, six angles</p>
+                    <button class="btn-details">Learn More</button>
+                </div>
+
+                <!-- Cube -->
+                <div class="shape-card" data-shape="cube">
+                    <div class="shape-icon">
+                        <div class="shape-visual cube-shape"></div>
+                    </div>
+                    <h3>Cube</h3>
+                    <p>3D shape with six square faces</p>
+                    <button class="btn-details">Learn More</button>
+                </div>
+
+                <!-- Sphere -->
+                <div class="shape-card" data-shape="sphere">
+                    <div class="shape-icon">
+                        <div class="shape-visual sphere-shape"></div>
+                    </div>
+                    <h3>Sphere</h3>
+                    <p>Round 3D shape like a ball</p>
+                    <button class="btn-details">Learn More</button>
+                </div>
+
+                <!-- Cone -->
+                <div class="shape-card" data-shape="cone">
+                    <div class="shape-icon">
+                        <div class="shape-visual cone-shape"></div>
+                    </div>
+                    <h3>Cone</h3>
+                    <p>3D shape with circular base</p>
+                    <button class="btn-details">Learn More</button>
+                </div>
+
+                <!-- Cylinder -->
+                <div class="shape-card" data-shape="cylinder">
+                    <div class="shape-icon">
+                        <div class="shape-visual cylinder-shape"></div>
+                    </div>
+                    <h3>Cylinder</h3>
+                    <p>3D shape with two circular bases</p>
+                    <button class="btn-details">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Drawing Section -->
+    <section class="interactive-section">
+        <div class="container">
+            <h2>Interactive Shape Drawing</h2>
+            <p>Draw your own shapes on the canvas below!</p>
+
+            <div class="drawing-area">
+                <div class="drawing-controls">
+                    <button class="draw-btn active" data-shape="line">Line</button>
+                    <button class="draw-btn" data-shape="circle">Circle</button>
+                    <button class="draw-btn" data-shape="rectangle">Rectangle</button>
+                    <button class="draw-btn" data-shape="triangle">Triangle</button>
+                    <button class="draw-btn" id="clearCanvas">Clear</button>
+                    <div class="color-picker">
+                        <label for="colorSelect">Color:</label>
+                        <input type="color" id="colorSelect" value="#4a6fa5">
+                    </div>
+                </div>
+                <canvas id="shapeCanvas" width="800" height="400">
+                    Your browser does not support the canvas element.
+                </canvas>
+                <p class="canvas-instruction">Click and drag on the canvas to draw shapes!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-shapes"></i>
+                    <h3>Geometry Learning Hub</h3>
+                    <p>Making geometry fun for everyone!</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shapes.html">Shapes</a></li>
+                        <li><a href="basics.html">Basics</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Learning Tips</h4>
+                    <p>Look for shapes in everyday objects!</p>
+                    <p>Practice drawing shapes freehand.</p>
+                    <p>Try our quiz to test your knowledge.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Basic Geometry Learning Hub. Made with <i class="fas fa-heart"></i> for geometry
+                    learners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shape Details Modal -->
+    <div class="modal-overlay" id="shapeModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <div class="modal-body">
+                <!-- Content will be loaded by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
